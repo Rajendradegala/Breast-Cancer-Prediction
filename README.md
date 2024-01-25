@@ -95,3 +95,20 @@ Wisconsin Prognosis Breast Cancer WPBC 34 198 2 (N=Non-Recur,
 R=Recur)
 3.2 Methodology
 
+
+3. Machine Learning Model(SVM):
+
+SVMs work by finding the hyperplane that best separates the two classes of data: Benign and Malignant tumors.
+
+A hyperplane is a line or a plane that divides the data into two regions. The optimal hyperplane is the one that maximizes the margin between the two classes.
+
+SVMs have several advantages for cancer classification, including:
+
+-They are very accurate, especially for small datasets.
+
+-They are robust to noise and outliers.
+
+-They can be used to classify tumors of different types and stages.
+
+-They can be used to predict the risk of cancer recurrence.
+
