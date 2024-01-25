@@ -43,6 +43,14 @@ mc_df.bust = mc_df.bust.fillna(0).astype(int)
 
 mc_df.category = mc_df.category.astype('category')
 
+missing_data = pd.DataFrame({'total_missing': mc_df.isnull().sum(), 'perc_missing': (mc_df.isnull().sum()/82790)*100})
+
+missing_data
+
 
 ![BREAST ANALYSIS](https://github.com/Rajendradegala/Breast-Cancer-Prediction/assets/140039152/cddab1fa-7d47-4675-9150-6c20a96194a0)
+
+
+2.FEATURE SELECTION AND ENGINEERING:
+
 
