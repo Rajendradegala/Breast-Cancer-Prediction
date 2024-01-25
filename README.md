@@ -95,7 +95,6 @@ Wisconsin Prognosis Breast Cancer WPBC 34 198 2 (N=Non-Recur,
 R=Recur)
 3.2 Methodology
 
-
 3. Machine Learning Model(SVM):
 
 SVMs work by finding the hyperplane that best separates the two classes of data: Benign and Malignant tumors.
@@ -111,4 +110,98 @@ SVMs have several advantages for cancer classification, including:
 -They can be used to classify tumors of different types and stages.
 
 -They can be used to predict the risk of cancer recurrence.
+
+
+
+Machine learning algorithms can be used to help doctors diagnose cancer more accurately and efficiently.
+
+ I will explain how support vector machines (SVMs) can be used for cancer classification:
+
+How SVMs Work for Cancer Classification
+SVMs work by finding the hyperplane that best separates the two classes of data: benign and malignant tumors.
+
+A hyperplane is a line or a plane that divides the data into two regions. The optimal hyperplane is the one that maximizes the margin between the two classes.
+
+The margin is the distance between the hyperplane and the closest points of each class. The larger the margin, the more confident the SVM is in its decision.
+
+In the case of cancer classification, the two classes of data are benign and malignant tumors.
+
+The SVM will find the hyperplane that best separates these two data classes.
+
+The closer the points are to the hyperplane, the more confident the SVM is in its decision.
+
+Advantages of Using SVMs for Cancer Classification
+
+SVMs have several advantages for cancer classification, including:
+
+
+import numpy as np
+
+import matplotlib.pyplot as plt
+
+from sklearn.datasets import load_breast_cancer
+
+from sklearn.model_selection import train_test_split
+
+from sklearn.svm import SVC
+
+# Load the breast cancer dataset
+
+cancer_data = load_breast_cancer()
+
+# Select two features for the 2D plot (e.g., feature 0 and feature 1)
+
+X = cancer_data.data[:, [0, 1]]
+
+y = cancer_data.target
+
+# Split the data into training and testing sets
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Create an SVM classifier with RBF kernel
+
+classifier = SVC(kernel=’rbf’, C=1.0)
+
+# Train the classifier
+
+classifier.fit(X_train, y_train)
+
+# Predict the labels for the test data
+
+predictions = classifier.predict(X_test)
+
+# Calculate the accuracy
+
+accuracy = np.mean(predictions == y_test)
+
+print(“Accuracy:”, accuracy)
+
+# Plot the decision boundary
+
+plt.figure()
+
+plt.scatter(X_test[:, 0], X_test[:, 1], c=y_test)
+
+ax = plt.gca()
+
+xlim = ax.get_xlim()
+
+ylim = ax.get_ylim()
+
+xx, yy = np.meshgrid(np.linspace(xlim[0], xlim[1], 50), np.linspace(ylim[0], ylim[1], 50))
+
+Z = classifier.decision_function(np.c_[xx.ravel(), yy.ravel()])
+
+Z = Z.reshape(xx.shape)
+
+plt.contour(xx, yy, Z, colors=’k’, levels=[-1, 0, 1], alpha=0.5, linestyles=[‘ — ‘, ‘-’, ‘ — ‘])
+
+plt.xlabel(‘Feature 0’)
+
+plt.ylabel(‘Feature 1’)
+
+plt.title(‘SVM Decision Boundary for Breast Cancer Classification’)
+
+plt.show()
 
