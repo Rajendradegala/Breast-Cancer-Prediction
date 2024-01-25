@@ -8,6 +8,7 @@ The suggested method uses a trained deep learning neural network system to categ
 
 ![Preprocessing data](https://github.com/Rajendradegala/Breast-Cancer-Prediction/assets/140039152/a9fee7a7-a692-4433-be2a-1b14c398dcb2)
 
+1.DATA  PREPROCESSING:
 
 The Wisconsin Diagnostic Breast Cancer dataset is utilized, consisting of various features related to tumor characteristics. The dataset is explored, visualized, and divided into training and testing sets. A logistic regression model is trained and evaluated using accuracy metrics.
 
