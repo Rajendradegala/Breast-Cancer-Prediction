@@ -47,6 +47,8 @@ missing_data = pd.DataFrame({'total_missing': mc_df.isnull().sum(), 'perc_missin
 
 missing_data
 
+![MISSING DATA](https://github.com/Rajendradegala/Breast-Cancer-Prediction/assets/140039152/5e8d81df-59f0-4ebb-a01f-f8209bf8de44)
+
 
 ![BREAST ANALYSIS](https://github.com/Rajendradegala/Breast-Cancer-Prediction/assets/140039152/cddab1fa-7d47-4675-9150-6c20a96194a0)
 
