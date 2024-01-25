@@ -31,7 +31,11 @@ Category- none missing; change to dtype category.
 Cup Size- Change the dtype to category for this column. This col has around 7% missing values. Taking a look at the rows where this value is missing might hint us towards how to handle these missing values.
 
 mc_df.bra_size = mc_df.bra_size.fillna('Unknown')
+
 mc_df.bra_size = mc_df.bra_size.astype('category').cat.as_ordered()
+
 mc_df.at[37313,'bust'] = '38'
+
 mc_df.bust = mc_df.bust.fillna(0).astype(int)
+
 mc_df.category = mc_df.category.astype('category')
