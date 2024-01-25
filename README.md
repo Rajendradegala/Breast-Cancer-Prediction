@@ -10,6 +10,9 @@ The suggested method uses a trained deep learning neural network system to categ
 
 1.DATA  PREPROCESSING:
 
+Data preprocessing is an essential step in working with datasets. It involves cleaning and transforming the data to make it suitable for analysis. This can include handling missing values, removing duplicates, scaling numerical features, encoding categorical variables, and more. By preprocessing the data, we can ensure that it is in a format that can be effectively used by machine learning algorithms. It's like preparing the ingredients before cooking a delicious meal! 🍳🥘
+
+
 The Wisconsin Diagnostic Breast Cancer dataset is utilized, consisting of various features related to tumor characteristics. The dataset is explored, visualized, and divided into training and testing sets. A logistic regression model is trained and evaluated using accuracy metrics.
 
 
