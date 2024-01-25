@@ -63,4 +63,7 @@ Supervised Feature selection techniques consider the target variable and can be 
 
 Unsupervised Feature Selection technique:
 
-Unsupervised Feature selection techniques ignore the target variable and can be used for the unlabelled data
+Unsupervised Feature selection techniques ignore the target variable and can be used for the unlabelled data.
+
+![FEATURE SELECTION](https://github.com/Rajendradegala/Breast-Cancer-Prediction/assets/140039152/ba4b7d4a-ef05-4750-a3bf-c557ffa2c107)
+
