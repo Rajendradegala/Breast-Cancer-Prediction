@@ -55,4 +55,6 @@ missing_data
 
 2.FEATURE SELECTION AND ENGINEERING:
 
+Feature selection is a way of selecting the subset of the most relevant features from the original features set by removing the redundant, irrelevant, or noisy features.
+
 
