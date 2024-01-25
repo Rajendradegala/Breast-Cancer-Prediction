@@ -205,3 +205,5 @@ plt.title(‘SVM Decision Boundary for Breast Cancer Classification’)
 
 plt.show()
 
+
+![BOUNDARY](https://github.com/Rajendradegala/Breast-Cancer-Prediction/assets/140039152/ed29a57c-0be6-465b-ae81-3c805c65f4ed)
