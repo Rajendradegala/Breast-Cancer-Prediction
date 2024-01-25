@@ -67,3 +67,31 @@ Unsupervised Feature selection techniques ignore the target variable and can be 
 
 ![FEATURE SELECTION](https://github.com/Rajendradegala/Breast-Cancer-Prediction/assets/140039152/ba4b7d4a-ef05-4750-a3bf-c557ffa2c107)
 
+Materials and Methodology:
+
+This section discusses the structure of the proposed approach along with the corresponding datasets.
+
+ Dataset Description
+ 
+we have used three breast cancer datasets: WBCO, WDBC, and WPBC acquired from the UCI 
+
+machine learning . Table 1 contains a summary of the sample dataset.
+
+Table 1. Sample dataset
+
+Data Set Short Name No. of 
+
+Attributes No. of Instances
+
+No. of Class
+
+Wisconsin Breast Cancer Original WBCO 10 699 2 (B=Benign, 
+M=Malignant)
+
+Wisconsin Diagnosis Breast Cancer WDBC 32 569 2 (B=Benign, 
+M=Malignant)
+
+Wisconsin Prognosis Breast Cancer WPBC 34 198 2 (N=Non-Recur, 
+R=Recur)
+3.2 Methodology
+
